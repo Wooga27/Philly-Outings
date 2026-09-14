@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philly Pour — Where's the move tonight?</title>
+<meta name="description" content="Cheap beer, real happy hours, and whatever's worth going out for tonight in Philly — trivia, day parties, live sets, bar crawls.">
+<meta property="og:title" content="Philly Pour — Where's the move tonight?">
+<meta property="og:description" content="Cheap beer, happy hours, and tonight's lineup — one board for Philly nightlife.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23201A13'/%3E%3Ctext x='50' y='68' font-size='60' font-family='Arial,sans-serif' font-weight='bold' fill='%23E5402A' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>🍺 14 HAPPY HOURS LIVE RIGHT NOW</span>
+      <span>🎟️ TRIVIA AT FRANKFORD HALL STARTS 8PM</span>
+      <span>📍 FISHTOWN HAS 6 SPOTS UNDER $5 TONIGHT</span>
+      <span>🎶 LIVE MUSIC AT THE POUR HOUSE — 9PM</span>
+      <span>🍺 14 HAPPY HOURS LIVE RIGHT NOW</span>
+      <span>🎟️ TRIVIA AT FRANKFORD HALL STARTS 8PM</span>
+      <span>📍 FISHTOWN HAS 6 SPOTS UNDER $5 TONIGHT</span>
+      <span>🎶 LIVE MUSIC AT THE POUR HOUSE — 9PM</span>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="#top" class="logo">PHILLY<span>POUR</span><small>21+</small></a>
+    <ul class="navlinks">
+      <li><a href="#lineup">Tonight</a></li>
+      <li><a href="#board">The Board</a></li>
+      <li><a href="#drop">Get the Drop</a></li>
+    </ul>
+    <div class="navbtns">
+      <button class="btn-drop" onclick="document.getElementById('drop').scrollIntoView()">Get the Drop</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="flyer">
+      <div class="tape" aria-hidden="true"></div>
+      <div class="tape two" aria-hidden="true"></div>
+      <p class="eyebrow">Philly · 21–25 · No cover charge on info</p>
+      <h1 class="headline">WHERE'S THE <em>MOVE</em> TONIGHT?</h1>
+      <p class="sub">Cheap beer, real happy hours, and whatever's actually worth leaving your apartment for — trivia, day parties, live sets, bar crawls. One board, updated all week, zero guessing.</p>
+      <div class="hero-ctas">
+        <a href="#board" class="btn-primary">See tonight's deals</a>
+        <a href="#lineup" class="btn-secondary">What's happening tonight</a>
+      </div>
+    </div>
+    <div class="stat-stub">
+      <h3>Right now in Philly</h3>
+      <div class="stat-row"><span class="stat-label">Happy hours live</span><span class="stat-num">14</span></div>
+      <div class="stat-row"><span class="stat-label">Cheapest pint tonight</span><span class="stat-num">$3.00</span></div>
+      <div class="stat-row"><span class="stat-label">Events posted this week</span><span class="stat-num">22</span></div>
+      <div class="stat-row"><span class="stat-label">Neighborhoods covered</span><span class="stat-num">7</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="filters" id="filters">
+  <div class="filters-inner">
+    <div class="filter-row" role="group" aria-label="Filter by neighborhood">
+      <span class="filter-label">Neighborhood</span>
+      <button class="pill line-orange active" data-filter="hood" data-value="all" aria-pressed="true">All</button>
+      <button class="pill line-orange" data-filter="hood" data-value="fishtown" aria-pressed="false">Fishtown</button>
+      <button class="pill line-orange" data-filter="hood" data-value="nolibs" aria-pressed="false">Northern Libs</button>
+      <button class="pill line-orange" data-filter="hood" data-value="rittenhouse" aria-pressed="false">Rittenhouse</button>
+      <button class="pill line-orange" data-filter="hood" data-value="southphilly" aria-pressed="false">South Philly</button>
+      <button class="pill line-orange" data-filter="hood" data-value="fairmount" aria-pressed="false">Fairmount</button>
+      <button class="pill line-orange" data-filter="hood" data-value="universitycity" aria-pressed="false">University City</button>
+    </div>
+    <div class="filter-row" role="group" aria-label="Filter by vibe">
+      <span class="filter-label">Vibe</span>
+      <button class="pill line-blue active" data-filter="vibe" data-value="all" aria-pressed="true">All</button>
+      <button class="pill line-blue" data-filter="vibe" data-value="dive" aria-pressed="false">Dive</button>
+      <button class="pill line-blue" data-filter="vibe" data-value="rooftop" aria-pressed="false">Rooftop</button>
+      <button class="pill line-blue" data-filter="vibe" data-value="sports" aria-pressed="false">Sports Bar</button>
+      <button class="pill line-blue" data-filter="vibe" data-value="daydrink" aria-pressed="false">Day Drink</button>
+      <button class="pill line-blue" data-filter="vibe" data-value="live" aria-pressed="false">Live Music</button>
+      <button class="pill-reset" id="resetFilters" type="button">Reset</button>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="lineup">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Updated daily</span>
+        <h2>Tonight's Lineup</h2>
+        <p>The stuff worth planning around — not just where beer is cheap, but where the night's actually happening.</p>
+      </div>
+    </div>
+    <div class="lineup-scroll" id="lineupScroll" aria-live="polite">
+      <div class="lineup-empty">Loading tonight's lineup…</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="board">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="kicker">14 spots · updated tonight</span>
+        <h2>The Board</h2>
+        <p>Every deal on the corkboard. Tap a neighborhood or vibe above to narrow it down.</p>
+      </div>
+    </div>
+    <div class="board">
+      <div class="board-grid" id="boardGrid" aria-live="polite">
+        <div class="no-results">Loading deals…</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="signup" id="drop">
+  <div class="signup-inner">
+    <h2>Get The Drop</h2>
+    <p>One text, every Thursday. Cheapest beers, best happy hours, and what's actually worth going out for this weekend.</p>
+    <div id="confirmMsg" style="display:none;" role="status"></div>
+    <form class="signup-form" id="dropForm">
+      <label for="dropInput" class="visually-hidden">Phone number</label>
+      <input type="tel" placeholder="Your phone number" id="dropInput" required autocomplete="tel">
+      <button type="submit">Text me</button>
+    </form>
+    <small>No spam. Unsubscribe with one word, anytime.</small>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <a href="#top" class="logo">PHILLY<span>POUR</span></a>
+      <p>Built by people tired of the group chat asking "wait where are we going" at 9:45pm. Deals and events get checked and refreshed through the week — always confirm prices with the bar before you go, since happy hour menus change.</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="#lineup">Tonight</a></li>
+      <li><a href="#board">The Board</a></li>
+      <li><a href="#drop">Get the Drop</a></li>
+    </ul>
+  </div>
+  <div class="fine-print">
+    Sample data shown for demonstration. Not affiliated with any bar or venue listed. Please drink responsibly, and never drink and drive.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
