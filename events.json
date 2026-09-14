@@ -1,0 +1,7 @@
+[
+  {"day":"Tonight · 8:00 PM","title":"Bar Trivia","venue":"Frankford Hall — Fishtown","tag":"Free entry","kind":"EVENT","color":"var(--riso-red)"},
+  {"day":"Tonight · 9:00 PM","title":"Live Set: The Locals","venue":"The Pour House — Northern Libs","tag":"$5 cover","kind":"MUSIC","color":"var(--riso-blue)"},
+  {"day":"Sat · 1:00 PM","title":"Rooftop Day Party","venue":"Whitewood Rooftop — Fairmount","tag":"$4 cans all day","kind":"DAY","color":"var(--riso-orange)"},
+  {"day":"Sun · 12:00 PM","title":"Eagles Watch Party","venue":"Third Rail Tavern — South Philly","tag":"$3 drafts, game on","kind":"GAME","color":"var(--riso-red)"},
+  {"day":"Thu · 7:00 PM","title":"Bar Crawl: Fishtown Loop","venue":"5 stops, one wristband","tag":"$15 wristband","kind":"CRAWL","color":"var(--riso-blue)"}
+]
